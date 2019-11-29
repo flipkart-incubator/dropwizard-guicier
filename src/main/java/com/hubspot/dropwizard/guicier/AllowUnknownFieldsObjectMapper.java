@@ -7,7 +7,7 @@ import io.dropwizard.setup.Bootstrap;
 
 /**
  * Dropwizard makes it really hard to allow unknown fields in the {@link io.dropwizard.Configuration}
- * @see <a href="https://github.com/dropwizard/dropwizard/blob/ca39aa51a87a596e7b7e7e1309f9c34d9544bf63/dropwizard-configuration/src/main/java/io/dropwizard/configuration/YamlConfigurationFactory.java#L71-L72>Dropwizard Source</a>
+ * @see <a href="https://github.com/dropwizard/dropwizard/blob/ca39aa51a87a596e7b7e7e1309f9c34d9544bf63/dropwizard-configuration/src/main/java/io/dropwizard/configuration/YamlConfigurationFactory.java#L71-L72">Dropwizard Source</a>
  */
 public class AllowUnknownFieldsObjectMapper extends ObjectMapper {
 

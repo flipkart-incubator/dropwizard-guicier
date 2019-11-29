@@ -1,10 +1,9 @@
 package com.hubspot.dropwizard.guicier;
 
 import com.codahale.metrics.health.HealthCheck;
-import com.google.inject.Binder;
 import com.google.inject.Injector;
 import com.google.inject.Key;
-import com.google.inject.Module;
+import com.google.inject.AbstractModule;
 import com.google.inject.matcher.Matchers;
 import com.google.inject.spi.ProvisionListener;
 import io.dropwizard.lifecycle.Managed;
@@ -20,7 +19,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.ext.Provider;
 import java.lang.reflect.Type;
 
-public class DropwizardModule implements Module {
+public class DropwizardModule extends AbstractModule {
   private static final Logger LOG = LoggerFactory.getLogger(DropwizardModule.class);
 
   private final Environment environment;
@@ -30,8 +29,8 @@ public class DropwizardModule implements Module {
   }
 
   @Override
-  public void configure(final Binder binder) {
-    binder.bindListener(Matchers.any(), new ProvisionListener() {
+  public void configure() {
+    bindListener(Matchers.any(), new ProvisionListener() {
       @Override
       public <T> void onProvision(ProvisionInvocation<T> provision) {
         Object obj = provision.provision();
