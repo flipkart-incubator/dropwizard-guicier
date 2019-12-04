@@ -20,10 +20,13 @@ Add this library (`dropwizard-guicier`) as dependency:
 ```
 As of now, following versions of `${dropwizard-guicier-version}` are available in Maven Central Artifactory:
 
-| Dropwizard version | `dropwizard-guicier-version` |
+| Dropwizard version | `dropwizard-guicier-version` | 
 |--------------------|----------------------------------------|
-| 1.3.17   | [1.3.17-1](https://repo1.maven.org/maven2/com/flipkart/utils/dropwizard-guicier/1.3.17-1/dropwizard-guicier-1.3.17-1.pom)     |
+| 1.3.5   | [1.3.5-2](https://mvnrepository.com/artifact/com.flipkart.utils/dropwizard-guicier/1.3.5-2)|
+| 1.3.17   | [1.3.17-1](https://mvnrepository.com/artifact/com.flipkart.utils/dropwizard-guicier/1.3.17-1)|
 
-If you have a version of Dropwizard that isn't listed here, you can build one yourself within minutes.
+If you have a version of Dropwizard that isn't listed here, [raise an issue](//github.com/flipkart-incubator/dropwizard-guicier/issues) or you can build one yourself.
 
-
+## Related links
+ * [dropwizard-guicier on mvnrepository](https://mvnrepository.com/artifact/com.flipkart.utils/dropwizard-guicier)
+ * [dropwizard-guicier on Maven Central](https://search.maven.org/artifact/com.flipkart.utils/dropwizard-guicier)
