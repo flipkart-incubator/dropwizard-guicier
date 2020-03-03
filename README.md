@@ -2,7 +2,7 @@
 ## About
 This is a fork of [HubSpot/dropwizard-guicier](https://github.com/HubSpot/dropwizard-guicier) with following modifications:
 
-  * Reduction in dependency footprint
+  * Significant reduction in dependency footprint
   * Reduction in inter-dependency conflicts (hence, lesser chances of [jar hell](https://dzone.com/articles/what-is-jar-hell))
   * Compatilibity with latest versions of Dropwizard
 
@@ -24,6 +24,8 @@ As of now, following versions of `${dropwizard-guicier-version}` are available i
 |--------------------|----------------------------------------|
 | 1.3.5   | [1.3.5-2](https://mvnrepository.com/artifact/com.flipkart.utils/dropwizard-guicier/1.3.5-2)|
 | 1.3.17   | [1.3.17-1](https://mvnrepository.com/artifact/com.flipkart.utils/dropwizard-guicier/1.3.17-1)|
+| 1.3.18   | [1.3.18-1](https://mvnrepository.com/artifact/com.flipkart.utils/dropwizard-guicier/1.3.18-1)|
+
 
 If you have a version of Dropwizard that isn't listed here, [raise an issue](//github.com/flipkart-incubator/dropwizard-guicier/issues) or you can build one yourself.
 
