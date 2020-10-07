@@ -1,9 +1,9 @@
 package com.hubspot.dropwizard.guicier.objects;
 
-import java.io.PrintWriter;
-
 import com.google.common.collect.ImmutableMultimap;
 import io.dropwizard.servlets.tasks.Task;
+
+import java.io.PrintWriter;
 
 public class ProvidedTask extends Task {
 

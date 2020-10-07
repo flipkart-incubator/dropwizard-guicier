@@ -1,15 +1,13 @@
 package com.hubspot.dropwizard.guicier;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
+import com.hubspot.dropwizard.guicier.objects.ExplicitDAO;
+import com.hubspot.dropwizard.guicier.objects.ExplicitResource;
+import com.squarespace.jersey2.guice.JerseyGuiceUtils;
+import io.dropwizard.testing.junit.ResourceTestRule;
 import org.junit.ClassRule;
 import org.junit.Test;
 
-import com.squarespace.jersey2.guice.JerseyGuiceUtils;
-
-import com.hubspot.dropwizard.guicier.objects.ExplicitDAO;
-import com.hubspot.dropwizard.guicier.objects.ExplicitResource;
-import io.dropwizard.testing.junit.ResourceTestRule;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * this test is created to address to Null Pointer Exceptions in JerseyTest.teardown() related to ServiceLocator

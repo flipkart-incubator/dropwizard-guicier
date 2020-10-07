@@ -1,12 +1,10 @@
 package com.hubspot.dropwizard.guicier.objects;
 
-import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
-
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-
 import com.google.inject.Inject;
+
+import javax.ws.rs.*;
+
+import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 
 @Path("/explicit")
 @Produces(APPLICATION_JSON)
@@ -20,7 +18,7 @@ public class ExplicitResource {
 
     @GET
     @Path("/message")
-    public String getMessage () {
+    public String getMessage() {
         return dao.getMessage();
     }
 

@@ -2,14 +2,14 @@ package com.hubspot.dropwizard.guicier.objects;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
-
 import io.dropwizard.lifecycle.Managed;
 
 @Singleton
 public class InjectedManaged implements Managed {
 
     @Inject
-    InjectedManaged() {}
+    InjectedManaged() {
+    }
 
     @Override
     public void start() throws Exception {

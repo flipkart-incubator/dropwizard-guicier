@@ -6,7 +6,8 @@ import com.google.inject.Inject;
 public class InjectedHealthCheck extends HealthCheck {
 
     @Inject
-    InjectedHealthCheck() {}
+    InjectedHealthCheck() {
+    }
 
     @Override
     protected Result check() throws Exception {

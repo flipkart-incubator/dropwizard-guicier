@@ -1,12 +1,13 @@
 package com.hubspot.dropwizard.guicier.objects;
 
-import javax.ws.rs.ext.Provider;
-
 import com.google.inject.Inject;
+
+import javax.ws.rs.ext.Provider;
 
 @Provider
 public class InjectedProvider {
 
-  @Inject
-  InjectedProvider() {}
+    @Inject
+    InjectedProvider() {
+    }
 }

@@ -1,15 +1,13 @@
-# Dropwizard-Guicier
+# Dropwizard-Guicier (Dropwizard with Guice)
 ## About
-
-
-This is a fork of [HubSpot/dropwizard-guicier](https://github.com/HubSpot/dropwizard-guicier) with following modifications:
+This is a fork of [HubSpot/dropwizard-guicier](https://github.com/HubSpot/dropwizard-guicier) and [Squarespace/jersey2-guice](https://github.com/Squarespace/jersey2-guice) with following improvements:
 
   * Significant reduction in dependency footprint
   * Reduction in inter-dependency conflicts (hence, lesser chances of [jar hell](https://dzone.com/articles/what-is-jar-hell))
-  * Compatilibity with latest versions of Dropwizard
+  * Compatibility with latest versions of Dropwizard
 
 ## Usage
-Add this library (`dropwizard-guicier`) as dependency:
+Add this library as dependency:
 
 ```xml
 <dependencies>
@@ -55,5 +53,5 @@ public class ExampleApplication extends Application<ExampleConfiguration> {
 ```
 
 ## Related links
- * [dropwizard-guicier on mvnrepository](https://mvnrepository.com/artifact/com.flipkart.utils/dropwizard-guicier)
- * [dropwizard-guicier on Maven Central](https://search.maven.org/artifact/com.flipkart.utils/dropwizard-guicier)
+ * [**Dropwizard with Guice** on mvnrepository](https://mvnrepository.com/artifact/com.flipkart.utils/dropwizard-guicier)
+ * [**Dropwizard with Guice** on Maven Central](https://search.maven.org/artifact/com.flipkart.utils/dropwizard-guicier)

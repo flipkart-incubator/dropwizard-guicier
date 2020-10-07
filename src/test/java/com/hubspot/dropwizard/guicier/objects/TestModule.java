@@ -1,12 +1,10 @@
 package com.hubspot.dropwizard.guicier.objects;
 
-import javax.inject.Singleton;
-
-import com.google.inject.AbstractModule;
-import com.google.inject.Provides;
-import com.google.inject.Scopes;
+import com.google.inject.*;
 import com.google.inject.name.Named;
 import com.google.inject.name.Names;
+
+import javax.inject.Singleton;
 
 public class TestModule extends AbstractModule {
     @Override

@@ -1,13 +1,12 @@
 package com.hubspot.dropwizard.guicier.objects;
 
-import java.io.PrintWriter;
-
 import com.google.common.collect.ImmutableMultimap;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
-
 import io.dropwizard.servlets.tasks.Task;
+
+import java.io.PrintWriter;
 
 @Singleton
 public class InjectedTask extends Task {

@@ -1,24 +1,18 @@
 package com.hubspot.dropwizard.guicier;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-import java.io.File;
-
-import javax.ws.rs.client.Client;
-
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.ClassRule;
-import org.junit.Test;
-
 import com.google.common.io.Resources;
 import com.hubspot.dropwizard.guicier.objects.HK2ContextBindings;
 import com.hubspot.dropwizard.guicier.objects.TestApplication;
 import com.squarespace.jersey2.guice.JerseyGuiceUtils;
-
 import io.dropwizard.Configuration;
 import io.dropwizard.client.JerseyClientBuilder;
 import io.dropwizard.testing.junit.DropwizardAppRule;
+import org.junit.*;
+
+import javax.ws.rs.client.Client;
+import java.io.File;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class InjectedIntegrationTest {
 
@@ -56,12 +50,12 @@ public class InjectedIntegrationTest {
     public void hk2ContextBindingsAreResolvableInGuice() {
         for (Class<?> clazz : HK2ContextBindings.SET) {
             boolean resolvable = client.target(getUri("/jersey-context/is-resolvable-by-guice"))
-                .queryParam("className", clazz.getName())
-                .request()
-                .get(Boolean.class);
+                    .queryParam("className", clazz.getName())
+                    .request()
+                    .get(Boolean.class);
             assertThat(resolvable)
-                .as("%s is resolvable by Guice", clazz.getName())
-                .isTrue();
+                    .as("%s is resolvable by Guice", clazz.getName())
+                    .isTrue();
         }
     }
 
