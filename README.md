@@ -3,7 +3,7 @@
 [![Build Status](https://api.travis-ci.org/flipkart-incubator/dropwizard-guicier.svg?branch=master)](https://travis-ci.org/github/flipkart-incubator/dropwizard-guicier)
 
 ## About
-This is a fork of [HubSpot/dropwizard-guicier](https://github.com/HubSpot/dropwizard-guicier) and [Squarespace/jersey2-guice](https://github.com/Squarespace/jersey2-guice) with following improvements:
+This is a fork of [HubSpot/dropwizard-guicier](https://github.com/HubSpot/dropwizard-guicier) (with embedded dependency [Squarespace/jersey2-guice](https://github.com/Squarespace/jersey2-guice)) with following improvements:
 
   * Significant reduction in dependency footprint
   * Reduction in inter-dependency conflicts (hence, lesser chances of [jar hell](https://dzone.com/articles/what-is-jar-hell))
@@ -26,7 +26,7 @@ As of now, following versions of `${dropwizard-guicier-version}` are available i
 | Dropwizard version | Guice version | `dropwizard-guicier-version` |
 |--------------------|---------------|------------------------------|
 | 1.3.5   | 4.2.2 | [1.3.5-2](https://mvnrepository.com/artifact/com.flipkart.utils/dropwizard-guicier/1.3.5-2)|
-| 1.3.17  | 4.2.2 | [1.3.17-1](https://mvnrepository.com/artifact/com.flipkart.utils/dropwizard-guicier/1.3.17-1)|
+| 1.3.17  | 4.2.2 | [1.3.17-2](https://mvnrepository.com/artifact/com.flipkart.utils/dropwizard-guicier/1.3.17-2)|
 | 1.3.18  | 4.2.2 | [1.3.18-1](https://mvnrepository.com/artifact/com.flipkart.utils/dropwizard-guicier/1.3.18-1)|
 | 1.3.19  | 4.2.2 | [1.3.19-1](https://mvnrepository.com/artifact/com.flipkart.utils/dropwizard-guicier/1.3.19-1)|
 
