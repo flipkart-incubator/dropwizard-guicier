@@ -1,4 +1,7 @@
 # Dropwizard-Guicier (Dropwizard with Guice)
+
+[![Build Status](https://api.travis-ci.org/flipkart-incubator/dropwizard-guicier.svg?branch=master)](https://travis-ci.org/github/flipkart-incubator/dropwizard-guicier)
+
 ## About
 This is a fork of [HubSpot/dropwizard-guicier](https://github.com/HubSpot/dropwizard-guicier) and [Squarespace/jersey2-guice](https://github.com/Squarespace/jersey2-guice) with following improvements:
 

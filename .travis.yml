@@ -1,11 +1,6 @@
-sudo: false
 language: java
-cache:
-  directories:
-    - $HOME/.m2
-
 jdk:
   - openjdk8
-  - openjdk11
-
-script: mvn -B clean verify
+install: mvn install -DskipTests -Dgpg.skip
+after_success:
+  - mvn clean test jacoco:report coveralls:report
